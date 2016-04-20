@@ -8,9 +8,9 @@ Send transactional style emails through the Responsys API.
 'use strict';
 
 var nodemailer = require('nodemailer');
-var responsysTransport = require('nodemailer-mandrill-transport');
+var responsysTransport = require('nodemailer-responsys-transport');
 
-var transport = nodemailer.createTransport(mandrillTransport({
+var transport = nodemailer.createTransport(responsysTransport({
   auth: {
     username: 'username',
     password: 'password'
